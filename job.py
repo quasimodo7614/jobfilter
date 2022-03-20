@@ -17,7 +17,7 @@ print(names) #['普通职位', '行政执法类', '专业技术类']
 #
 #  #通过sheet名获得sheet对象
 total=0
-for sheet_name in ('普通职位', '行政执法类', '专业技术类'):
+for sheet_name in names:
     worksheet=workbook.sheet_by_name(sheet_name)
     print(worksheet) #<xlrd.sheet.Sheet object at 0x000001B98D99CFD0>
 
